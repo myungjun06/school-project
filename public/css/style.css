@@ -1,0 +1,128 @@
+@charset 'UTF-8';
+
+/*
+GENERAL STYLING
+================================================ */
+:root {
+    --text-color: #190707;
+    --background-color: #A9D0F5;
+    --yellow-color: #3498f5c0;
+}
+    
+html {
+    font-size: 100%;
+    /* 스무스 스크롤 */
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+	font-family: sans-serif;
+    background-color: #A9D0F5;
+}
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    
+}
+li {
+    text-decoration: none;
+    color: var(--text-color);
+}
+.nav_wrapper{
+    width: 1900px;
+    margin: 0 auto;
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--background-color);
+    padding: 8px 12px;
+    position: relative;
+    z-index: 1;
+}
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+footer {
+    text-align: center;
+}
+/*
+nav
+================================================ */
+#nev {
+    width: 100%;
+}
+#nev::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.nav_header > ul ul{
+    display: none;
+}
+:root{
+    --site-width:1200px;
+}
+
+.nav_logo {
+    font-size: 24px;
+    color: var(--text-color);
+}
+
+.main_menu{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    font-size: 30px;
+    font-weight: 900;
+    cursor:pointer;
+    justify-content: space-between;
+
+}
+.main_menu li {
+    position: relative;
+    float: left;
+    text-align: center;
+    background-color: #A9D0F5;
+    padding: 0px 40px;
+    transition: all ease 1.5s 0s;
+}
+
+.main_menu li:hover {
+    background-color: var(--yellow-color);
+    border-radius: 10px;
+    display: block;
+}
+    
+
+
+
+
+
+
+
+/*배경 비디오
+==============================================*/
+
+.jb-box { 
+    width: 50%; 
+    height: 55rem;
+    margin: 0px auto; 
+    position: relative; 
+    right: 20%; 
+    top: 13rem;
+    z-index: -1;
+}
+
+
+video { 
+    width: 100%;
+ }
+
+
+.jb-text p { 
+    margin-top: -2.4rem; text-align: center; font-size: 4.8rem; color: #ffffff; 
+}
